@@ -1,0 +1,164 @@
+//            [switch]            //
+
+
+// public class Main {
+//   public static void main(String[] args) {
+//     int month = 3;
+//     String monthString = "";
+//     switch (month){
+//       case 12:
+//       case 1:  
+//       case 2: monthString = "겨울";
+//                   break;
+//       case 3: 
+//       case 4: 
+//       case 5: monthString = "봄";
+//                   break;
+//       case 6:  
+//       case 7:  
+//       case 8: monthString = "여름";
+//                   break;
+//       case 9:  
+//       case 10:
+//       case 11: monthString = "가을";
+//                   break;
+//     }
+//     System.out.println(monthString);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+//            [While]  위에서 판단함, if에서 찍고 다시 올라가서 위에서 10미만이 아닐때 빠져나감          //
+
+
+// public class Main {
+// public static void main(String[] args) {
+// int treeHit = 0;
+// while (treeHit < 10) {
+//     treeHit++;
+//     System.out.println("나무를  " + treeHit + "번 찍었습니다.");
+//     if (treeHit == 10) {
+//         System.out.println("나무 넘어갑니다.");
+//      }
+//   }
+//  }
+// }
+
+
+
+
+
+
+//[break]
+
+// int coffee = 10;
+// int money = 300;
+
+// while (money > 0) {
+//     System.out.println("돈을 받았으니 커피를 줍니다.");
+//     coffee--;
+//     System.out.println("남은 커피의 양은 " + coffee + "입니다.");
+//     if (coffee == 0) {
+//         System.out.println("커피가 다 떨어졌습니다. 판매를 중지합니다.");
+//         break;
+//     }
+// }
+
+
+
+
+
+
+//[continue]
+
+// int a = 0;
+// while (a < 10) {
+//     a++;
+//     if (a % 2 == 0) {
+//         continue;
+//     }
+//     System.out.println(a);
+// }
+
+
+
+
+//            [for]            //
+
+//  public class Main {
+//  public static void main(String[] args) {
+// String[] numbers = {"one","two","three"};
+// for(int i =0; i<numbers.length; i++) {
+//   System.out.println(numbers[i]);
+//   }
+//  }
+// }
+
+
+// public class Main {
+// public static void main (String[] args) {
+//   int[] marks = {90,25,67,45,80};
+//   for(int i = 0; i<marks.length; i++) {
+//     if (marks[i] >= 60) {
+//       System.out.println((i+1)+"번 학생은 합격입니다.");
+//     }else {
+//       System.out.println((i+1)+"번 학생은 불합격입니다.");
+//     }
+//   }
+// }  
+// }
+
+
+// public class Main {
+// public static void main (String[] args) {
+//   int[] marks = {90, 25, 67, 45, 80};
+// for(int i=0; i<marks.length; i++) {
+//     if (marks[i] < 60) {
+//         continue;
+//     }
+//     System.out.println((i+1)+"번 학생 축하합니다. 합격입니다.");
+// }
+// }
+// }
+
+
+// // [for를 이용한 구구단]] // -> 통째로 외우기
+// public class Main{
+//   public static void main (String[] args) {
+//     for(int i=2; i<10; i++){
+//       for(int j=1; j<10; j++) {
+//         System.out.print(i*j+" ");  //ln없이 print만해서 옆으로 찍히고 빈칸을 넣음
+//       }
+//       System.out.println("");
+//     }
+//   }
+// }
+
+
+
+
+//       [for each]         //
+// import java.util.ArrayList;
+
+// public class Main {
+// public static void main(String[] args) {
+// ArrayList<String> numbers = new ArrayList<String>();
+// numbers.add("one");
+// numbers.add("two");
+// numbers.add("three");
+
+//  for(String number: numbers) {
+//      System.out.println(number);
+//     }
+// }
+// }
+
+
+
