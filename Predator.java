@@ -1,4 +1,5 @@
-public interface Predator {
-    public String getFood();    //getFood메소드를 이름만 구현,네용 없음, 인터페이스에 물린 클래스들이 세부사항 구현해야함..
+public interface Predator {    //작업지시표다, 인터페이스 연결했으면 상세내용을 각 메소드에서 만들어줘야한다.
+                               //상속은 단일상속만 가능, 인터페이스는 여러개 동시구현 가능함.
+    public String getFood();
     
 }

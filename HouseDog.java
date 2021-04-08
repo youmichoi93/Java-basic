@@ -1,44 +1,48 @@
-public class HouseDog extends Dog {
-    public HouseDog(String name) {
+public class HouseDog extends Dog {  //생성자:클라스명과 메소드명이 동일, 리턴 자료형이 없는 메소드 
+    public HouseDog(String name){  //아래 객체가 비어있으면 오류뜸, 문자 자료형 넣으라고 했기때문.
         this.setName(name);
-    }   //생성할때 자동으로 맨 처음으로 호출된다.메소드명이 클래스명과 동일 and 리턴타입 정의하지않는다.
-    
+    }
+
+
     public HouseDog(int type) {
-        if(type == 1){
+        if (type == 1) {
             this.setName("york");
         } else if (type == 2) {
             this.setName("bulldog");
         }
     }
 
-//생성자 2개 만듦(생성자 오버로딩), 타입이 문자면 위에 것, 숫자면 아래 생성자에 떨어지게 되어있음.
 
-    
-    public void sleep() {  //자식이 우선, dog의 같은 sleep메소드말고 여기에있는 함수가 구현됨
-        System.out.println(this.name+" zzz in house");
-    } 
-
-    public void sleep(int hour) { 
-        System.out.println(this.name+" zzz in house for " + hour + "hours");
-    } 
-
-    public void sleep(int hour,int min) { 
-        System.out.println(this.name+" zzz in house for " + hour + "hours"+ " and " + min +"mins.");
-    } 
-
-
-    public static void main(String[] args) {
-        HouseDog happy = new HouseDog("happy");
-        HouseDog york = new HouseDog(1);  //animal의 기능 사용
-        System.out.println(happy.name);
-        System.out.println(york.name);
+    public void sleep(){
+      System.out.println(this.name+"zzz in house");
+    //overriding: Dog에서 상속받아 sleep메소드를 사용 가능했지만 똑같은 메소드를 HouseDog에 추가했을때 손자 것이 우선이다 
     
     }
+    public void sleep(int hour){
+        System.out.println(this.name+"zzz in house for " + hour + "hours");
+
+    }
+
+    public static void main(String[] args){
+        HouseDog happy = new HouseDog("happy");
+        HouseDog york = new HouseDog(1); //생성자오버로딩 위에 숫자타입 입력항목이고, 1이면 york찍기
+        System.out.println(happy.name);
+        System.out.println(york.name);
+       
+       
+       
+       
+        // System.out.println(housedog.name);
+
+       
+       
+       
+       
+        //housedog.setName("happy");
+        //housedog.sleep();      //sleep()메소드 호출
+        //housedog.sleep(3);    //sleep(int hour) 메소드 호출
+        //overloading :입력항목이 다른경우 같은 메소드 추가할 수 있다.
+
+    }
+    
 }
-
-//오버라이딩 덮어쓰는 것, 손자개념 부모클래스의 메소드를 자식클래스가 동일한 형태로 또다시 구현하는 행위 
-// 메소드 오버로딩: 메소드를 추가해서 인수가 있고 없고, 인수에 따라 위치 선택
-
-
-
-
