@@ -1,0 +1,62 @@
+class Main {
+  public static void main(String[] args) {
+    
+    // System.out.println("홍\n길\n동");
+    // System.out.println("");
+    // System.out.println("홍\n\n길\n동");
+    // System.out.println("");
+
+
+    // System.out.println("홍");
+    // System.out.println("길");
+    // System.out.println("");
+    // System.out.println("동");
+
+    
+  
+  // #2-1 다양한 방법
+  // System.out.println("82 + 17 = " + (82+17));
+  // System.out.println("82 - 17 = " + (82-17));
+  // System.out.println(82+17);
+  // System.out.println(82-17);
+
+
+
+  // #2-2
+  // int x = 63;
+  // int y = 18;
+
+  // System.out.println("x값은 " + x + "입니다.");
+  // System.out.println("y값은 " + y + "입니다.");
+  // System.out.println("합계는 "+ (x+y) + "입니다.");
+  // System.out.println("평균은 "+ (x+y)/2 + "입니다."); //나눗셈 먼저 계산이라 괄호 필요없음
+
+
+
+  //# 2-3
+  // double x = 63.4;
+  // double  y = 18.8;
+
+  // System.out.println("x값은 " + x + "입니다.");
+  // System.out.println("y값은 " + y + "입니다.");
+  // System.out.println("합계는 "+ (x+y) + "입니다.");
+  // System.out.println("평균은 "+ (x+y)/2 + "입니다."); 
+
+
+
+  //# 2-4
+  
+   int x = 63;
+   int y = 18;
+   int z = 52;
+   int sum = x+y+z;
+
+  System.out.println("x값은 " + x + "입니다.");
+  System.out.println("y값은 " + y + "입니다.");
+  System.out.println("z값은 " + z + "입니다.");
+  System.out.println("합계는 "+ sum + "입니다.");
+  System.out.println("평균은 "+ sum/3 + "입니다."); 
+
+  }
+}
+
