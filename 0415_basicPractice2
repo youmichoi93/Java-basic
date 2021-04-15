@@ -17,7 +17,7 @@ Random rand = new Random();
 
 int x = rand.nextInt(9)+1;//1이상 9이하
 int y = -1 -rand.nextInt(9);//-9이상 -1이하
-int z = rand.nextInt(99)+10; //10이상99이하
+int z = rand.nextInt(90)+10; //10이상99이하
 
 System.out.println ("3개의 난수를 생성했습니다.");
 System.out.println ("한 자리 양의 정수:"+x); 
