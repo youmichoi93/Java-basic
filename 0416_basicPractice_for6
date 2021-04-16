@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+
+  
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("정방향을 표시합니다.");
+    
+    System.out.print("단수는:");
+    int a = sc.nextInt();
+    
+    for (int i = 0; i< a; i++){//줄
+      for (int j = 0; j<a; j++){ //줄마다 갯수
+      System.out.print("*");//if a=3 j=3
+      }
+     System.out.println("");
+
+
+    }
+
+
+
+
+   
+  }
+}
