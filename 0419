@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("두 자리 정수를 하나 입력하세요:");
+    String input = sc.nextLine(); //문자열로 입력받음
+    int num = Integer.parseInt(input); //입력받은 문자열을 숫자로 바꿈
+    
+System.out.println("입력내용 " + input); //문자로 출력
+System.out.printf("num=%d%n ",num); //숫자로 출력, printf (%d 는 정수형)
+
+
+      }
+}
+
+//nextInt() 를 쓰지 않고  Integer.parseInt() 를 사용하는 이유는?
+//nextInt 는 스페이스를 구분자로 인식하는데 
+//스페이스는 데이터로도 활용될 수 있기 때문이다.
+
+
+//숫자를 문자열로 바꾸는 법 
+//String  s1= Integer.toString(12); / String  s2= String.valueOf(12);
